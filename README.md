@@ -106,32 +106,9 @@ Este repositorio reúne dos proyectos complementarios para el caso de estudio de
     ```
   - Por defecto suele iniciar en http://localhost:4200 (ajústalo según `package.json`).
 
-## Base de Datos
 
-- Scripts SQL principales en [das-restaurante/scripts/sql](das-restaurante/scripts/sql) y subcarpetas por restaurante.
-- En das-ristorino hay utilitarios: [das-ristorino/setup-database.sh](das-ristorino/setup-database.sh) y documentación en [das-ristorino/a-documentacion](das-ristorino/a-documentacion) (ver especialmente [VERIFICACION_DATOS_RESTAURANTES.md](das-ristorino/a-documentacion/VERIFICACION_DATOS_RESTAURANTES.md)).
-- Motor y credenciales: adapta a tu entorno local según los scripts. Si tu entorno es Windows, puedes usar Git Bash o un cliente SQL de tu preferencia para ejecutar los `.sql`.
 
-## Documentación útil
 
-- Arquitectura general y nueva propuesta: [das-restaurante/ARQUITECTURA.md](das-restaurante/ARQUITECTURA.md), [das-restaurante/ARQUITECTURA_NUEVA.md](das-restaurante/ARQUITECTURA_NUEVA.md)
-- Quickstart Ristorino: [das-ristorino/QUICKSTART.md](das-ristorino/QUICKSTART.md)
-- Guías de desarrollo y prácticas: [das-ristorino/a-documentacion/GUIA_DESARROLLO.md](das-ristorino/a-documentacion/GUIA_DESARROLLO.md), [das-ristorino/a-documentacion/EJEMPLOS_PRACTICOS.md](das-ristorino/a-documentacion/EJEMPLOS_PRACTICOS.md)
-
-## Troubleshooting
-
-- Si un servicio no arranca:
-  - Verifica que el puerto no esté ocupado y revisa `target/` y [logs](logs).
-  - Ejecuta `mvnw clean` y vuelve a correr `spring-boot:run` en ese módulo.
-- Scripts `.sh` en Windows:
-  - Usa Git Bash o WSL. Alternativamente, ejecuta cada servicio con `mvnw.cmd` como se muestra arriba.
-- Endpoints y pruebas manuales:
-  - Revisa los `TEST_CURL.md` en cada módulo REST y el archivo [das-restaurante/test-soap.html](das-restaurante/test-soap.html) para pruebas SOAP.
-
-## Contribución y Estilo
-
-- Mantén los cambios acotados por módulo.
-- Actualiza documentación relacionada cuando agregues/alteres endpoints u operaciones.
 - Antes de subir, compila localmente y ejecuta pruebas rápidas (`mvnw test` si aplica).
 
 ---
